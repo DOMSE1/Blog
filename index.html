@@ -403,6 +403,10 @@ margin-top:5px;
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+.dark-mode {
+  background-color: black;
+  color: white;
 }	
    </style>
     </head>
@@ -692,6 +696,7 @@ margin-top:5px;
             </table>
             </div>
 	<div class="powr-reviews" id="71b06b8d_1612091375"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+<button onclick="myFunction()">Toggle dark mode</button>
             <footer>
              <p>Design & Developed by - KARTIK<br>
               © 2021 All Rights Reserved : ATOMIC </p>
@@ -763,6 +768,12 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+</script>
+<script>
+function yyFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
 }
 </script>
   
